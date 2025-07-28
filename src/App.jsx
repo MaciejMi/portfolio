@@ -1,7 +1,10 @@
+import './assets/main.scss'
+import Navigation from './components/Navigation'
+
 const App = () => {
 	return (
 		<>
-			<h1>Hello everyone!</h1>
+			<Navigation />
 		</>
 	)
 }
