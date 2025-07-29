@@ -6,6 +6,7 @@ import githubIcon from '../assets/imgs/github.svg'
 import linkedinIcon from '../assets/imgs/linkedin.svg'
 import discordIcon from '../assets/imgs/discord.svg'
 import xIcon from '../assets/imgs/x.svg'
+import Button from './addons/Button'
 
 const Header = () => {
 	return (
@@ -17,7 +18,7 @@ const Header = () => {
 					isOnline={true}
 				/>
 				<div className="header__content">
-					<div>
+					<div class="top">
 						<h1>Maciej Michalczyk</h1>
 						<h2>Full-Stack Developer</h2>
 						<p className="header__location">
@@ -34,12 +35,16 @@ const Header = () => {
 						<a href="https://www.linkedin.com/in/maciej-michalczyk/" target="_blank">
 							<img src={linkedinIcon} alt="Linkedin icon" />
 						</a>
-						<a href="https://discord.gg/F8WhdJ8abj" target="_blank">
+						<a href="https://x.com/maciej_dev" target="_blank">
 							<img src={xIcon} alt="X icon" />
 						</a>
 						<a href="https://discord.gg/F8WhdJ8abj" target="_blank">
 							<img src={discordIcon} alt="Discord icon" />
 						</a>
+					</div>
+					<div className="header__buttons">
+						<Button text="Projekty" />
+						<Button text="Kontakt" isOutline={true} />
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 @use './_colors' as c;
 
 .header {
-	padding: 150px 40px;
+	padding: 120px 40px;
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -12,16 +12,22 @@
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
+
+		.top {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
 	}
 
 	h1 {
 		font-family: 'Outfit', sans-serif;
-		font-size: 8rem;
+		font-size: 4rem;
 	}
 
 	h2 {
 		font-family: 'Space Grotesk', sans-serif;
-		font-size: 4rem;
+		font-size: 2.8rem;
 		text-transform: uppercase;
 		color: c.$accent-color;
 		font-weight: 300;
@@ -29,12 +35,12 @@
 
 	&__location {
 		color: c.$accent-color;
-		font-size: 2.4rem;
+		font-size: 2rem;
 	}
 
 	&__description {
 		color: c.$accent-color;
-		font-size: 2.4rem;
+		font-size: 2rem;
 		span {
 			color: c.$textColor;
 			text-decoration: underline;
@@ -43,9 +49,9 @@
 
 	&__social-media {
 		display: flex;
-		gap: 30px;
+		gap: 20px;
 		img {
-			width: 40px;
+			width: 30px;
 		}
 		a {
 			transition: transform 0.3;
@@ -53,6 +59,67 @@
 
 		a:hover {
 			transform: scale(1.1);
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 15px;
+	}
+}
+
+@media (min-width: 576px) {
+	.header {
+		h1 {
+			font-size: 5rem;
+		}
+
+		h2 {
+			font-size: 2.8rem;
+		}
+
+		&__location {
+			font-size: 2.2rem;
+		}
+
+		&__description {
+			font-size: 2.2rem;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.header {
+		h1 {
+			font-size: 6rem;
+		}
+
+		h2 {
+			font-size: 3rem;
+		}
+
+		&__location {
+			font-size: 2.6rem;
+		}
+
+		&__description {
+			font-size: 2.6rem;
+		}
+
+		&__social-media {
+			img {
+				width: 40px;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.header {
+		h1 {
+			font-size: 7rem;
+		}
+
+		h2 {
+			font-size: 3.5rem;
 		}
 	}
 }

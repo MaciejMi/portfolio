@@ -14,7 +14,7 @@
 // PROFILE CIRCLE
 
 .profile_circle {
-	width: 200px;
+	width: 150px;
 	position: relative;
 
 	animation: moving 5s infinite;
@@ -55,6 +55,29 @@
 	}
 }
 
+// BUTTON
+
+.button {
+	text-decoration: none;
+	color: c.$textColor;
+	background-color: c.$offline;
+	padding: 10px 20px;
+	border-radius: 15px;
+	border: 2px solid c.$offline;
+
+	transition: background-color 0.3s;
+	&:hover {
+		background: none;
+	}
+
+	&--outline {
+		background: none;
+		&:hover {
+			background-color: c.$offline;
+		}
+	}
+}
+
 // RWD
 
 @media (min-width: 576px) {
@@ -63,7 +86,7 @@
 	}
 
 	.profile_circle {
-		width: 300px;
+		width: 200px;
 	}
 }
 
@@ -73,17 +96,31 @@
 	}
 
 	.profile_circle {
-		width: 400px;
+		width: 250px;
 
 		.status {
-			width: 50px;
-			height: 50px;
+			width: 40px;
+			height: 40px;
+			bottom: 15%;
+			right: 2%;
 		}
+	}
+
+	.button {
+		padding: 15px 30px;
 	}
 }
 
 @media (min-width: 992px) {
 	.badge {
 		font-size: 1.4rem;
+	}
+
+	.profile_circle {
+		width: 300px;
+
+		.status {
+			right: 5%;
+		}
 	}
 }
