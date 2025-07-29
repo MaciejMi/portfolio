@@ -11,7 +11,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		gap: 20px;
 	}
 
 	&__top {
@@ -39,12 +39,16 @@
 	&__links {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		gap: 20px;
 		align-items: center;
 		width: 100%;
 	}
 
 	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
 		text-decoration: none;
 		color: c.$textColor;
 		transition: color 0.3s, transform 0.3s;
@@ -81,14 +85,40 @@
 			gap: 0;
 		}
 
+		&__item {
+			font-size: 2rem;
+		}
+
 		&__menu {
 			display: none;
+		}
+
+		&__hide {
+			display: flex;
 		}
 	}
 }
 
 @media (min-width: 768px) {
+	.nav {
+		padding: 30px 40px;
+		&__item {
+			font-size: 2.2rem;
+		}
+
+		&__logo {
+			img {
+				width: 50px;
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
+	.nav {
+		&__item {
+			font-size: 2.4rem;
+			gap: 8px;
+		}
+	}
 }

@@ -1,0 +1,26 @@
+.badge {
+	padding: 2px 5px;
+	border-radius: 15px;
+	color: #000;
+	letter-spacing: 2%;
+	font-size: 1rem;
+	background-image: linear-gradient(#ffffff, #c0c0c0);
+}
+
+@media (min-width: 576px) {
+	.badge {
+		font-size: 1.1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.badge {
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.badge {
+		font-size: 1.4rem;
+	}
+}
