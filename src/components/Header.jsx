@@ -2,6 +2,10 @@ import '../assets/header.scss'
 
 import profileImage from '../assets/imgs/profile.jpeg'
 import ProfileCircle from './addons/ProfileCircle'
+import githubIcon from '../assets/imgs/github.svg'
+import linkedinIcon from '../assets/imgs/linkedin.svg'
+import discordIcon from '../assets/imgs/discord.svg'
+import xIcon from '../assets/imgs/x.svg'
 
 const Header = () => {
 	return (
@@ -13,14 +17,30 @@ const Header = () => {
 					isOnline={true}
 				/>
 				<div className="header__content">
-					<h1>Maciej Michalczyk</h1>
-					<h2>Full-Stack Developer</h2>
-					<p>
-						<i class="ti ti-map-pin"></i> Kielce, Polska
-					</p>
-					<p>
+					<div>
+						<h1>Maciej Michalczyk</h1>
+						<h2>Full-Stack Developer</h2>
+						<p className="header__location">
+							<i class="ti ti-map-pin"></i> Kielce, Polska
+						</p>
+					</div>
+					<p class="header__description">
 						Tworzę <span>aplikacje internetowe</span> w <span>React.js</span> i <span>Express.js</span>.
 					</p>
+					<div className="header__social-media">
+						<a href="https://github.com/MaciejMi" target="_blank">
+							<img src={githubIcon} alt="Github icon" />
+						</a>
+						<a href="https://www.linkedin.com/in/maciej-michalczyk/" target="_blank">
+							<img src={linkedinIcon} alt="Linkedin icon" />
+						</a>
+						<a href="https://discord.gg/F8WhdJ8abj" target="_blank">
+							<img src={xIcon} alt="X icon" />
+						</a>
+						<a href="https://discord.gg/F8WhdJ8abj" target="_blank">
+							<img src={discordIcon} alt="Discord icon" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
