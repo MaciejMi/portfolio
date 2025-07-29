@@ -1,12 +1,13 @@
 @use './_colors' as c;
 
 .nav {
-	position: sticky;
+	position: fixed;
+	width: 100%;
 	top: 0;
 	padding: 20px 40px;
-
 	background-color: c.$navBackgroundColor;
-
+	z-index: 1000;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	.wrapper {
 		position: relative;
 		display: flex;
