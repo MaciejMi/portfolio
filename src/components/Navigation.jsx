@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import logo from '../assets/imgs/logo.png'
 import '../assets/navigation.scss'
-import Badge from './Badge'
+import Badge from './addons/Badge'
 
 const Navigation = () => {
 	const [isShowMenu, setIsShowMenu] = useState(false)

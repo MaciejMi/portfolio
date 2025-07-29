@@ -1,4 +1,4 @@
-import '../assets/components.scss'
+import '../../assets/components.scss'
 
 const Badge = ({ text }) => {
 	return <span className="badge">{text}</span>
