@@ -1,5 +1,13 @@
 .header {
 	padding: 150px 40px;
 	.wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	h1 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 8rem;
 	}
 }
