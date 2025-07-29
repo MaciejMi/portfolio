@@ -1,17 +1,32 @@
 @use './_colors' as c;
 
 .nav {
-	padding: 20px 100px;
+	position: sticky;
+	top: 0;
+	padding: 20px 40px;
+
 	background-color: c.$navBackgroundColor;
 
 	.wrapper {
+		position: relative;
 		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	&__logo {
 		img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			transition: transform 0.3s;
-			width: 50px;
+			width: 40px;
 		}
 
 		&:hover {
@@ -23,19 +38,57 @@
 
 	&__links {
 		display: flex;
+		flex-direction: column;
+		gap: 10px;
 		align-items: center;
-		justify-content: space-around;
 		width: 100%;
 	}
 
 	&__item {
 		text-decoration: none;
 		color: c.$textColor;
-		font-size: 2.4rem;
 		transition: color 0.3s, transform 0.3s;
+		font-size: 1.6rem;
 		&:hover {
 			color: c.$accent-color;
 			transform: scale(1.05);
 		}
 	}
+
+	&__menu {
+		border: 1px transparent;
+		font-size: 4rem;
+		background: none;
+		color: c.$textColor;
+		cursor: pointer;
+	}
+
+	&__hide {
+		display: none;
+	}
+}
+
+@media (min-width: 576px) {
+	.nav {
+		.wrapper {
+			flex-direction: row;
+			gap: 0;
+		}
+
+		&__links {
+			flex-direction: row;
+			justify-content: space-around;
+			gap: 0;
+		}
+
+		&__menu {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
 }
