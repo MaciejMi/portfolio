@@ -265,6 +265,33 @@
 	}
 }
 
+// DIALOG
+
+.dialog {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: c.$cardBgColor;
+	border: 1px solid c.$textColor;
+	color: c.$textColor;
+	z-index: 1000;
+
+	button {
+		margin-top: 20px;
+		padding: 10px 20px;
+		background: none;
+		color: c.$textColor;
+		border: 1px solid c.$textColor;
+		border-radius: 15px;
+	}
+}
+
 // RWD
 
 @media (min-width: 576px) {
@@ -353,6 +380,28 @@
 
 		p {
 			font-size: 2rem;
+		}
+	}
+
+	.blogCard {
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+
+		&--main {
+			align-items: center;
+			flex-direction: row;
+		}
+
+		&__content {
+			h4 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 2rem;
+			}
 		}
 	}
 }
