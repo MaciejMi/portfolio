@@ -88,6 +88,29 @@
 	box-shadow: 0px 0px 10px 0 rgba(123, 123, 123, 0.5);
 }
 
+// SKILL
+
+.skill {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	width: fit-content;
+	padding: 10px 20px;
+	background-color: c.$skillBackgroundColor;
+	border: 1px solid rgba(224, 224, 224, 0.2);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	transition: transform 0.3s;
+	img {
+		width: 25px;
+		height: 25px;
+	}
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
 // RWD
 
 @media (min-width: 576px) {
@@ -118,6 +141,16 @@
 
 	.button {
 		padding: 15px 30px;
+	}
+
+	.skill {
+		gap: 15px;
+		img {
+			width: 30px;
+			height: 30px;
+		}
+
+		font-size: 2rem;
 	}
 }
 

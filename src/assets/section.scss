@@ -37,16 +37,44 @@
 		flex-direction: column;
 		gap: 20px;
 	}
+
+	&__bottom {
+		h3 {
+			padding: 20px 0;
+			font-size: 2.5rem;
+			color: c.$accent-color;
+		}
+	}
+
+	&__skills {
+		display: flex;
+		gap: 15px;
+		flex-wrap: wrap;
+	}
 }
 
 @media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
+	.section {
+		padding: 40px;
+		.wrapper {
+			h2 {
+				font-size: 4rem;
+			}
+		}
+	}
+
 	.aboutme {
 		&__top {
 			p {
 				font-size: 2rem;
+			}
+		}
+		&__bottom {
+			h3 {
+				font-size: 3.2rem;
 			}
 		}
 	}
@@ -64,6 +92,18 @@
 			}
 			.image_box {
 				order: 1;
+			}
+		}
+
+		&__skills {
+			gap: 25px;
+			display: flex;
+		}
+
+		&__bottom {
+			h3 {
+				padding-top: 50px;
+				font-size: 3.8rem;
 			}
 		}
 	}
