@@ -1,0 +1,70 @@
+@use './_colors' as c;
+
+.section {
+	padding: 40px;
+	.wrapper {
+		h2 {
+			font-family: 'Outfit', sans-serif;
+			text-transform: uppercase;
+			font-size: 3rem;
+			text-decoration: underline;
+			text-underline-offset: 10px;
+			color: c.$accent-color;
+			padding-bottom: 50px;
+		}
+	}
+}
+
+.aboutme {
+	p {
+		padding: 10px 0;
+		letter-spacing: 2%;
+		line-height: 200%;
+		span {
+			color: c.$accent-color;
+			text-decoration: underline;
+		}
+
+		a {
+			span {
+				color: c.$online;
+			}
+		}
+	}
+
+	&__top {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+	.aboutme {
+		&__top {
+			p {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.aboutme {
+		&__top {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: stretch;
+			p {
+				width: 70%;
+				font-size: 2.2rem;
+			}
+			.image_box {
+				order: 1;
+			}
+		}
+	}
+}

@@ -1,5 +1,6 @@
 import './assets/main.scss'
 import Header from './components/Header'
+import Main from './components/Main'
 import Navigation from './components/Navigation'
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
 		<>
 			<Navigation />
 			<Header />
+			<Main />
 		</>
 	)
 }
