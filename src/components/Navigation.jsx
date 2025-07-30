@@ -26,7 +26,7 @@ const Navigation = () => {
 					</button>
 				</div>
 				<div className={isShowMenu ? 'nav__links' : 'nav__links nav__hide'}>
-					<a href="#" className="nav__item" onClick={onLinkClickedHandle}>
+					<a href="#aboutme" className="nav__item" onClick={onLinkClickedHandle}>
 						O mnie
 					</a>
 					<a href="#" className="nav__item" onClick={onLinkClickedHandle}>

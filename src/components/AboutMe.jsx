@@ -20,7 +20,7 @@ import premiereIcon from '../assets/imgs/skills/premiere.png'
 
 const AboutMe = () => {
 	return (
-		<Section title="O mnie" className="aboutme">
+		<Section title="O mnie" className="aboutme" id="aboutme">
 			<div className="aboutme__top">
 				<SectionImage
 					image={aboutmeImage}
