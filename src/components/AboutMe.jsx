@@ -34,18 +34,18 @@ const AboutMe = () => {
 					</p>
 					<p>
 						Na co dzień pracuję z <span>Reactem i Expressem</span>. Znam też podstawy <span>Pythona, Javy i C++</span>.
-						Poza programowaniem interesuję się grafiką i montażem – korzystam z <span>Photoshopa i Premiere Pro</span>.
+						Poza programowaniem interesuję się grafiką i montażem filmów – korzystam z{' '}
+						<span>Photoshopa i Premiere Pro</span>.
 					</p>
 					<p>
 						Najbardziej motywuje mnie możliwość zamiany pomysłu w coś <span>realnego</span>. Uczę się na bieżąco i
 						rozwijam portfolio projekt po projekcie. To dopiero początek, ale idę po więcej.
 					</p>
 					<p>
-						Jeśli to brzmi ciekawie – &nbsp;
+						Brzmi ciekawie? &nbsp;
 						<a href="#kontakt">
-							<span>zawsze możesz do mnie napisać</span>
+							<span>Napisz do mnie!</span>
 						</a>
-						.
 					</p>
 				</div>
 			</div>

@@ -32,10 +32,10 @@ const Navigation = () => {
 					<a href="#projects" className="nav__item" onClick={onLinkClickedHandle}>
 						Projekty
 					</a>
-					<a href="#" className="nav__item" onClick={onLinkClickedHandle}>
+					<a href="#experience" className="nav__item" onClick={onLinkClickedHandle}>
 						Doświadczenia
 					</a>
-					<a href="#" className="nav__item" onClick={onLinkClickedHandle}>
+					<a href="#blog" className="nav__item" onClick={onLinkClickedHandle}>
 						Blog <Badge text="New" />
 					</a>
 					<a href="#" className="nav__item" onClick={onLinkClickedHandle}>

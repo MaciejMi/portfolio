@@ -33,7 +33,7 @@ const Experience = () => {
 					Rozwijałem aplikacje internetowe w React.js i Express.js oraz pracowałem z wzorcem MVC w realnych projektach.{' '}
 				</ExperienceCard>
 				<ExperienceCard
-					title="Stażysta"
+					title="Uczeń"
 					company="Zespół Szkół Informatycznych im. gen. Józefa Hauke Bosaka"
 					location="Kielce, Polska"
 					dates="01/09/2021 - 24/04/2026"
