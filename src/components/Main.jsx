@@ -1,4 +1,5 @@
 import AboutMe from './AboutMe'
+import Experience from './Experience'
 import Projects from './Projects'
 
 const Main = () => {
@@ -6,6 +7,7 @@ const Main = () => {
 		<main>
 			<AboutMe />
 			<Projects />
+			<Experience />
 		</main>
 	)
 }
