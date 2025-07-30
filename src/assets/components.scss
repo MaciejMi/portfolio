@@ -111,6 +111,53 @@
 	}
 }
 
+// PROJECT_BOX
+
+.projectBox {
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+	width: 100%;
+	border: 1px solid rgba(224, 224, 224, 0.2);
+	text-decoration: none;
+	color: c.$textColor;
+	overflow: hidden;
+	background-color: c.$skillBackgroundColor;
+	transition: transform 0.3s;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	img {
+		height: 200px;
+		object-fit: cover;
+	}
+
+	&__content {
+		padding: 20px;
+	}
+
+	h4 {
+		padding: 20px 0;
+		font-size: 2rem;
+	}
+
+	&__skills {
+		padding: 20px 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		.skill {
+			font-size: 1.6rem;
+			img {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
+
 // RWD
 
 @media (min-width: 576px) {
@@ -164,6 +211,28 @@
 
 		.status {
 			right: 5%;
+		}
+	}
+
+	.projectBox {
+		max-width: 400px;
+
+		&__content {
+			font-size: 2.2rem;
+		}
+
+		h4 {
+			font-size: 3rem;
+		}
+
+		&__skills {
+			.skill {
+				font-size: 2rem;
+				img {
+					width: 30px;
+					height: 30px;
+				}
+			}
 		}
 	}
 }

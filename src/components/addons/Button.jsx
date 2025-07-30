@@ -1,6 +1,6 @@
-const Button = ({ text, isOutline }) => {
+const Button = ({ text, isOutline, href }) => {
 	return (
-		<a href="" className={isOutline ? 'button button--outline' : 'button'}>
+		<a href={href} className={isOutline ? 'button button--outline' : 'button'}>
 			{text}
 		</a>
 	)

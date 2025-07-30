@@ -29,7 +29,7 @@ const Navigation = () => {
 					<a href="#aboutme" className="nav__item" onClick={onLinkClickedHandle}>
 						O mnie
 					</a>
-					<a href="#" className="nav__item" onClick={onLinkClickedHandle}>
+					<a href="#projects" className="nav__item" onClick={onLinkClickedHandle}>
 						Projekty
 					</a>
 					<a href="#" className="nav__item" onClick={onLinkClickedHandle}>

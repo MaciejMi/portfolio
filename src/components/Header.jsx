@@ -43,7 +43,7 @@ const Header = () => {
 						</a>
 					</div>
 					<div className="header__buttons">
-						<Button text="Projekty" />
+						<Button text="Projekty" href="#projects" />
 						<Button text="Kontakt" isOutline={true} />
 					</div>
 				</div>
