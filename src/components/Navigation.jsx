@@ -38,7 +38,7 @@ const Navigation = () => {
 					<a href="#blog" className="nav__item" onClick={onLinkClickedHandle}>
 						Blog <Badge text="New" />
 					</a>
-					<a href="#" className="nav__item" onClick={onLinkClickedHandle}>
+					<a href="#contact" className="nav__item" onClick={onLinkClickedHandle}>
 						Kontakt
 					</a>
 				</div>

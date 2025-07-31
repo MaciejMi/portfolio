@@ -44,7 +44,7 @@ const Header = () => {
 					</div>
 					<div className="header__buttons">
 						<Button text="Projekty" href="#projects" />
-						<Button text="Kontakt" isOutline={true} />
+						<Button text="Kontakt" href="#contact" isOutline={true} />
 					</div>
 				</div>
 			</div>
