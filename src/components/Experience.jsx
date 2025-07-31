@@ -16,7 +16,7 @@ const Experience = () => {
 					title="Stażysta"
 					company="Forja Roja"
 					location="Malaga, Hiszpania"
-					dates="23/06/2025 - 04/06/2025"
+					dates="23/06/2025 - 04/07/2025"
 					image={forjaRojaCompanyIcon}
 					countryIcon={espaniaFlag}
 					countryAlt="Spain">
