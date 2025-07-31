@@ -1,12 +1,42 @@
-# React + Vite
+# Michalczyk.dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live: https://michalczyk.netlify.app
 
-Currently, two official plugins are available:
+This is my personal portfolio containing the following sections:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- About me
+- Projects
+- Experience
+- Blog
+- Contact
 
-## Expanding the ESLint configuration
+The portfolio was built using **React** and **SCSS**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Screenshot](./screenshots/image.png)
+
+## Run Locally
+
+To run **Michalczyk.dev** locally, follow these steps:
+
+```bash
+git clone https://github.com/MaciejMi/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+Then open your browser at http://localhost:5173.
+
+If you run into problems, make sure Node.js and npm are installed.
+
+## Author
+
+[Maciej Michalczyk](https://github.com/MaciejMi)
+
+## License
+
+This project is licensed for **personal and non-commercial use only**.  
+You are free to view, clone, and modify it for your own learning or private projects.  
+Commercial use, redistribution, or publication without permission is strictly prohibited.
+
+Copyright © 2025–present Maciej Michalczyk. All rights reserved.
