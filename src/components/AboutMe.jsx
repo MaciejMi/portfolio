@@ -17,6 +17,7 @@ import cppIcon from '../assets/imgs/skills/cpp.png'
 import gitIcon from '../assets/imgs/skills/git.png'
 import photoshopIcon from '../assets/imgs/skills/photoshop.png'
 import premiereIcon from '../assets/imgs/skills/premiere.png'
+import Aos from 'aos'
 
 const AboutMe = () => {
 	return (
