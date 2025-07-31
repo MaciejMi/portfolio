@@ -43,7 +43,7 @@ const AboutMe = () => {
 					</p>
 					<p>
 						Brzmi ciekawie? &nbsp;
-						<a href="#kontakt">
+						<a href="#contact">
 							<span>Napisz do mnie!</span>
 						</a>
 					</p>
