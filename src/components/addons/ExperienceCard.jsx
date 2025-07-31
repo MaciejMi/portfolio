@@ -10,7 +10,7 @@ const ExperienceCard = ({ children, title, company, location, dates, image, coun
 					<p>{location}</p>
 					<img src={countryIcon} alt={countryAlt} />
 				</div>
-				<p class="experienceCard__date">{dates}</p>
+				<p className="experienceCard__date">{dates}</p>
 				<p>{children}</p>
 			</div>
 			<div className="experienceCard__right">

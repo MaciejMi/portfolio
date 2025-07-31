@@ -18,14 +18,14 @@ const Header = () => {
 					isOnline={true}
 				/>
 				<div className="header__content">
-					<div class="top">
+					<div className="top">
 						<h1>Maciej Michalczyk</h1>
 						<h2>Full-Stack Developer</h2>
 						<p className="header__location">
-							<i class="ti ti-map-pin"></i> Kielce, Polska
+							<i className="ti ti-map-pin"></i> Kielce, Polska
 						</p>
 					</div>
-					<p class="header__description">
+					<p className="header__description">
 						Tworzę <span>aplikacje internetowe</span> w <span>React.js</span> i <span>Express.js</span>.
 					</p>
 					<div className="header__social-media">

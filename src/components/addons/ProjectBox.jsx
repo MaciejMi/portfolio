@@ -9,8 +9,8 @@ const ProjectBox = ({ title, image, children, skills, link }) => {
 				<h4>{title}</h4>
 				<p>{children}</p>
 				<div className="projectBox__skills">
-					{skills.map(skill => (
-						<Skill key={skill.text} icon={skill.image} text={skill.title} />
+					{skills.map((skill, index) => (
+						<Skill key={index} icon={skill.image} text={skill.title} />
 					))}
 				</div>
 			</div>
