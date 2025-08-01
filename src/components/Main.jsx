@@ -3,7 +3,6 @@ import ArrowUp from './addons/ArrowUp'
 import Blog from './Blog'
 import Contact from './Contact'
 import Experience from './Experience'
-import Footer from './Footer'
 import Projects from './Projects'
 
 const Main = () => {
@@ -15,7 +14,6 @@ const Main = () => {
 			<Experience />
 			<Blog />
 			<Contact />
-			<Footer />
 		</main>
 	)
 }
