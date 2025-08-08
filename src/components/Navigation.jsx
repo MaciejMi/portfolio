@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import logo from '../assets/imgs/logo.png'
 import '../assets/navigation.scss'
 import Badge from './addons/Badge'
@@ -13,6 +13,18 @@ const Navigation = () => {
 	const onLinkClickedHandle = () => {
 		setIsShowMenu(false)
 	}
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsShowMenu(false)
+		}
+
+		window.addEventListener('scroll', handleScroll)
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	}, [])
 
 	return (
 		<nav className="nav">
